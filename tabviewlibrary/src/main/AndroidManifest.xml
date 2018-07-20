@@ -3,7 +3,7 @@
     package="com.example.tabviewlibrary">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".TabView"></activity>
     </application>
 
 </manifest>

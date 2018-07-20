@@ -1,6 +1,5 @@
 package com.example.tabviewlibrary;
 
-import android.arch.lifecycle.ViewModelStoreOwner;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,7 @@ import com.example.tabviewlibrary.model.FragmentModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class TabView extends AppCompatActivity {
 
 private CustomFragmentAdapter adapter;
 private List<FragmentModel> fragments;
@@ -22,7 +21,7 @@ private TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.tabView);
         init();
     }
 
