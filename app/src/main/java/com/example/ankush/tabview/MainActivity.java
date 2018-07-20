@@ -13,7 +13,7 @@ public class MainActivity extends TabView {
         super.onCreate(savedInstanceState);
         initTabView();
         addFragment(new FragmentModel(new fragment1(),"tab1"));
-        addFragment(new FragmentModel(new fragment1(),"tab2"));
+        addFragment(new FragmentModel(new fragment2(),"tab2"));
 
     }
 
