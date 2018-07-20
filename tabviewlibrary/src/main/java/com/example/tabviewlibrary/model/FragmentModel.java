@@ -1,6 +1,9 @@
 package com.example.tabviewlibrary.model;
 
-import android.app.Fragment;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 
 public class FragmentModel {
     
