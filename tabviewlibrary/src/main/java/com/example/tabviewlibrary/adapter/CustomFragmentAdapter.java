@@ -13,11 +13,8 @@ public class CustomFragmentAdapter extends FragmentPagerAdapter {
 
     List<FragmentModel> fragments=new ArrayList<>();
 
-    public CustomFragmentAdapter(FragmentManager fm) {
+    public CustomFragmentAdapter(FragmentManager fm,List<FragmentModel> fragments) {
         super(fm);
-    }
-
-    public void init(List<FragmentModel> fragments){
         fragments.clear();
         this.fragments=fragments;
     }
