@@ -11,7 +11,7 @@ public class fragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View rootView= inflater.inflate(R.layout.fragment1, container, false);
+        View rootView= inflater.inflate(R.layout.fragment2, container, false);
 
         return rootView;
     }
