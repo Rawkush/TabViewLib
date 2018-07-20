@@ -4,6 +4,18 @@ Library for creating a tab view without any effort
 
 # Usage
 
-Add it in your root build.gradle at the end of repositories:
+step 1. Add it in your root build.gradle at the end of repositories:
 
-https://jitpack.io/#Rawkush/TabViewLib/0.1.0
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+  
+  Step 2. Add the dependency
+  
+  dependencies {
+	        implementation 'com.github.Rawkush:TabViewLib:0.1.0'
+	}
