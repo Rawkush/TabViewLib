@@ -23,5 +23,25 @@ public class CustomFragmentAdapter extends FragmentPagerAdapter {
       return fragments.get(position);
     }
 
+    @Override
+    public int getCount() {
+      return fragments.size();
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+
+        //  TODO: change the named  of the tabs here
+
+        if(position==0)
+            return "New";
+        else
+        if(position==1)
+            return "Popular";
+            //setting deafult
+        else
+            return "New";
+
+    }
 
 }
