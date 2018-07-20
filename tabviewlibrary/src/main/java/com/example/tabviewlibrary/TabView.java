@@ -21,7 +21,7 @@ private TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tabView);
+        setContentView(R.layout.activity_tab_viewlib12);
         init();
     }
 
