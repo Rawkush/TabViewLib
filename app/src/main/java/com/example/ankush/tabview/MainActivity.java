@@ -11,11 +11,31 @@ public class MainActivity extends TabView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initTabView();
+        createTabLayout();
         addFragment(new FragmentModel(new fragment1(),"tab1"));
         addFragment(new FragmentModel(new fragment2(),"tab2"));
 
     }
 
+    @Override
+    public void createTabLayout() {
+        setContentView(R.layout.layout);
+        init();
 
+    }
+
+    @Override
+    public void initViewPager() {
+        super.initViewPager();
+    }
+
+    @Override
+    public void initTabView() {
+        super.initTabView();
+    }
+
+    @Override
+    public void addFragment(FragmentModel fragmentModel) {
+        super.addFragment(fragmentModel);
+    }
 }

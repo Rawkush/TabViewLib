@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TabView extends AppCompatActivity {
-
 private CustomFragmentAdapter adapter;
 private List<FragmentModel> fragments;
 private ViewPager viewPager;
@@ -21,11 +20,15 @@ private TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        createTabLayout();
+    }
+
+    public void createTabLayout(){
         setContentView(R.layout.activity_tab_viewlib12);
         init();
     }
 
-    private void init(){
+    public void init(){
         fragments=new ArrayList<>();
         initViewPager();
         initAdapter();
