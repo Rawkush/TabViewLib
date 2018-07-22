@@ -20,22 +20,7 @@ public class MainActivity extends TabView {
     @Override
     public void createTabLayout() {
         setContentView(R.layout.layout);
-        init();
-
+        start();
     }
 
-    @Override
-    public void initViewPager() {
-        super.initViewPager();
-    }
-
-    @Override
-    public void initTabView() {
-        super.initTabView();
-    }
-
-    @Override
-    public void addFragment(FragmentModel fragmentModel) {
-        super.addFragment(fragmentModel);
-    }
 }

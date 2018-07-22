@@ -21,14 +21,14 @@ private TabLayout tabLayout;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         createTabLayout();
+        start();
     }
 
     public void createTabLayout(){
         setContentView(R.layout.activity_tab_viewlib12);
-        init();
     }
 
-    public void init(){
+    public void start(){
         fragments=new ArrayList<>();
         initViewPager();
         initAdapter();
