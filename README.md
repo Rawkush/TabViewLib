@@ -17,7 +17,7 @@ allprojects {
   Step 2. Add the dependency
   ```java
   dependencies {
-	        implementation 'com.github.Rawkush:TabViewLib:0.1.0'
+	        implementation 'com.github.Rawkush:TabViewLib:0.1.1'
 	}
  ```
 
@@ -33,7 +33,7 @@ public class MainActivity extends TabView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initTabView();  // use this if you wants tabs 
+        addTabs  // use this if you wants tabs 
         addFragment(new FragmentModel(new fragment1(),"tab1"));
         addFragment(new FragmentModel(new fragment2(),"tab2"));
 
@@ -44,29 +44,22 @@ public class MainActivity extends TabView {
         addFragment(new FragmentModel(new fragment1(),"tab1")); // adds fragment and create View
 ```
 
-# Helper Methods
-if using your own layout override the following function
-
+if you wish to use your own layout then just add a viewpager and a Tablayout(Not necessary)
+initialse your viewpager and pass it to the initViewPagerAndTabLayout() method.
+below is the example how to do this
 ```java
+
+ViewPager viewPager;
+
 @Override
-    public void initViewPager() {
-        super.initViewPager();
-     // initialise your viewpager here
-             viewPager=(ViewPager)findViewById(R.id.viewpager);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+       setContentView(R.layout.layout);
+       viewPager=findViewById(R.id.viewpager);
+       initViewpagerAndTablayout(viewPager);
+       addFragment(new FragmentModel(new fragment1(),"tab1"));
+       addFragment(new FragmentModel(new fragment2(),"tab2"));
 
     }
+
 ```
-
-```java
-
-    @Override
-    public void initTabView() {
-        super.initTabView();
-	//initialise your tabLayout Here and set it up with viepager, eg below
-	 tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
-    }
-    ```
-
-
-
