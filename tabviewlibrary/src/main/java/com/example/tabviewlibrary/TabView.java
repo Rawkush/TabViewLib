@@ -20,32 +20,41 @@ private TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        createTabLayout();
+        setContentView(R.layout.activity_tab_viewlib12);
         start();
     }
 
-    public void createTabLayout(){
-        setContentView(R.layout.activity_tab_viewlib12);
-    }
 
-    public void start(){
+    private void start(){
         fragments=new ArrayList<>();
-        initViewPager();
+        initViewpagerAndTablayout();
         initAdapter();
     }
 
-    public void initViewPager(){
+    private void initViewpagerAndTablayout(){
         viewPager=(ViewPager)findViewById(R.id.viewpager);
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
     }
+
+    public void initViewpagerAndTablayout(ViewPager viewPager){
+        this.viewPager=viewPager;
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        initAdapter();
+    }
+    public void initViewpagerAndTablayout(ViewPager viewPager,TabLayout tabLayout){
+        this.viewPager=viewPager;
+        this.tabLayout=tabLayout;
+        initAdapter();
+        addTabs();
+    }
+
 
     private void initAdapter(){
         adapter = new CustomFragmentAdapter(getSupportFragmentManager(), fragments);
         viewPager.setAdapter(adapter);
-
     }
 
-    public void initTabView(){
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
+    private void addTabs(){
         tabLayout.setupWithViewPager(viewPager);
     }
 
