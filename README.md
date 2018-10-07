@@ -66,5 +66,15 @@ ViewPager viewPager;
 
 # Projects using TabViewlib
 
-1. RawAnime
-2. AnimeWallpaper
+<ol>
+	
+<li>
+	<a href="https://github.com/Rawkush/RawAnime">RawAnime</a>
+</li>
+
+<li>
+
+<a href="https://github.com/Rawkush/AnimeWallpapers">AnimeWallpaper</a>
+</li>
+
+</ol>
