@@ -1,5 +1,16 @@
 # TabViewLib
 
+  ![Maintenance](https://img.shields.io/badge/Maintained%3F-No-red.svg)  ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+ ![GitHub last commit](https://img.shields.io/github/last-commit/rawkush/TabViewLib?style=plastic)
+ ![GitHub Release Date](https://img.shields.io/github/release-date/rawkush/TabViewLib?style=plastic) ![Lines of code](https://img.shields.io/tokei/lines/github/rawkush/TabViewLib?style=plastic)
+   ![GitHub issues](https://img.shields.io/github/issues/rawkush/TabViewLib?style=plastic) ![GitHub closed issues](https://img.shields.io/github/issues-closed/rawkush/TabViewLib?style=plastic)    ![GitHub forks](https://img.shields.io/github/forks/rawkush/TabViewLib?style=social)
+   ![GitHub Repo stars](https://img.shields.io/github/stars/rawkush/TabViewLib?style=social)
+   ![GitHub watchers](https://img.shields.io/github/watchers/rawkush/TabViewLib?style=social) <br /> ![GitHub all releases](https://img.shields.io/github/downloads/rawkush/TabViewLib/total?style=plastic) <br />
+
+   ![GitHub](https://img.shields.io/github/license/rawkush/TabViewLib?style=plastic)
+   [![HitCount](http://hits.dwyl.com/rawkush/TabViewLib.svg)](http://hits.dwyl.com/rawkush/TabViewLib)
+   
+
 Library for creating a tab view without any effort
 
 # Download
