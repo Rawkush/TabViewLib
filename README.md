@@ -8,8 +8,7 @@
    ![GitHub watchers](https://img.shields.io/github/watchers/rawkush/TabViewLib?style=social) <br /> ![GitHub all releases](https://img.shields.io/github/downloads/rawkush/TabViewLib/total?style=plastic) <br />
 
    ![GitHub](https://img.shields.io/github/license/rawkush/TabViewLib?style=plastic)
-   [![HitCount](http://hits.dwyl.com/rawkush/TabViewLib.svg)](http://hits.dwyl.com/rawkush/TabViewLib)
-   
+![ViewCount](https://views.whatilearened.today/views/github/rawkush/tabviewlib.svg)   
 
 Library for creating a tab view without any effort
 
